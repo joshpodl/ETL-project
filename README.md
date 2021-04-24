@@ -9,6 +9,26 @@ Education and housing are closely related in our socio economic life. In this pr
 Perform ETL on the data and document the following:
 
 - The sources of data that you will extract from.
+
+```python
+census_variables_dict={"NAME":"county_name",
+                       "DP02_0001E":"total_households",
+                       "DP02_0016E":"average_household_size",
+                       "DP02_0087E":"total_population",
+                       "DP02_0151E":"computers_and_internet_use_total_households",
+                       "DP02_0053E":"population_3yr_and_over_enrolled_in_school",
+                       "DP02_0062E":"educational_attainment_hs",
+                       "DP03_0062E":"median_houshold_income",
+                       "DP03_0063E":"mean_household_income",
+                       "DP03_0120E":"educational_attainment_hs",
+                       "DP04_0004E":"homeowner_vacancy_rate",
+                       "DP04_0089E": "owner_median_price",
+                       "DP04_0110E":"household_w_mortgage_num",
+                       "DP04_0117E":"household_wo_mortgage_num",
+                       "DP04_0134E": "renter_median_price",
+                       "DP04_0136E":"renters_num"}
+```
+
 - The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
 - The type of final production database to load the data into (relational or non-relational).
 - The final tables or collections that will be used in the production database.
