@@ -8,7 +8,9 @@ Education and housing are closely related in our socio economic life. In this pr
 
 Perform ETL on the data and document the following:
 
-- The sources of data that you will extract from.
+### The sources of data that we extracted from.
+
+* [American Community Survey 5-Year Data (2009-2019)](https://www.census.gov/data/developers/data-sets/acs-5year.html)
 
 ```python
 census_variables_dict={"NAME":"county_name",
@@ -28,7 +30,8 @@ census_variables_dict={"NAME":"county_name",
                        "DP04_0134E": "renter_median_price",
                        "DP04_0136E":"renters_num"}
 ```
-
+* [Ohio School districts with city and county name](https://www.greatschools.org/schools/districts/Ohio/OH/)
+* [Ohio Tax Annual Report 2020](https://tax.ohio.gov/static/communications/publications/annual_reports/2020annualreport.pdf)
 - The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
 - The type of final production database to load the data into (relational or non-relational).
 - The final tables or collections that will be used in the production database.
@@ -47,11 +50,5 @@ At the end of the week, your team will submit a Final Report that describes the 
 
 Data are published in 2020 or 2019.
 
-## Data Source
-
-[Ohio Tax Annual Report 2020](https://tax.ohio.gov/static/communications/publications/annual_reports/2020annualreport.pdf)
-
-https://api.census.gov/data/2019/acs/acs5/profile/groups.html
-
-[Ohio School districts with city and county name](https://www.greatschools.org/schools/districts/Ohio/OH/)
-
+## Copyright (R)
+**Staci Wilson, Yang Shi, Josh Podl**
