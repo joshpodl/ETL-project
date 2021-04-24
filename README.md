@@ -50,5 +50,5 @@ At the end of the week, your team will submit a Final Report that describes the 
 
 Data are published in 2020 or 2019.
 
-## Copyright (R)
+## Copyright &copy;
 **Staci Wilson, Yang Shi, Josh Podl**
