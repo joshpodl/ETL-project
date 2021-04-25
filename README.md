@@ -41,7 +41,7 @@ You will be required to submit a final technical report with the above informati
 **census table**
 
   - Primary:
-    - county_name 
+    - county_name varchar(20)
   - Numerical:
      - total_households numeric(15)
      - average_household_size numeric(15)
