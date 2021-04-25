@@ -61,7 +61,7 @@ You will be required to submit a final technical report with the above informati
 **schools table**
 
   - Primary:
-   - id serial
+    - id serial
   - Non-numerical:
     - district_name text 
     - city varchar(30) 
@@ -72,9 +72,9 @@ You will be required to submit a final technical report with the above informati
   - Primary:
     - county_name varchar(20)
   - Numerical:
-   - num_of_returns numeric(15)
-   - fed_agi numeric(15)
-   - oh_income_tax_liability numeric(15)
+    - num_of_returns numeric(15)
+    - fed_agi numeric(15)
+    - oh_income_tax_liability numeric(15)
 
 **property_tax**
 
