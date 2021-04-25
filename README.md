@@ -35,8 +35,6 @@ Perform ETL on the data and document the following:
 - The final tables that are used in the production database.
   - schools, census, income_tax, property_tax   
 
-You will be required to submit a final technical report with the above information and steps required to reproduce your ETL process.
-
 ## Structure (progresql tables under housing_db)
 **census table**
 
