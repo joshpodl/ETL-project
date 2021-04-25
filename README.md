@@ -1,8 +1,8 @@
 # ETL-project
 
-## Proposal
+## Context
 
-Education and housing are closely related in our socio economic life. In this project, we will extract data on those fields from three different resources: Ohio Tax Information, Census API on Social (DP02), Economic(DP03), and Housing(DP04) Characteristics of Ohio (state:39) Counties (88 total), and Greatschools.org. The gathered data will then be cleaned and transformed into a PostgreSQL database.
+Education and housing are closely related in our socio economic life. In this project, we extracted data on those fields from three different resources: Ohio Tax Information, Census API on Social (DP02), Economic(DP03), and Housing(DP04) Characteristics of Ohio (state:39) Counties (88 total), and Greatschools.org. The gathered data will then be cleaned and transformed into a PostgreSQL database.
 
 ## Data Cleanup & Analysis
 
@@ -37,13 +37,61 @@ Perform ETL on the data and document the following:
 
 You will be required to submit a final technical report with the above information and steps required to reproduce your ETL process.
 
-## Project Report
+## Structure (progresql tables under housing_db)
+**census table**
 
-At the end of the week, your team will submit a Final Report that describes the following:
+  - Primary:
+    - county_name 
+  - Numerical:
+     - total_households numeric(15)
+     - average_household_size numeric(15)
+     - total_population numeric(15)
+     - computers_and_internet_use_total_households numeric(15)
+     - population_3yr_and_over_enrolled_in_school numeric(15)
+     - educational_attainment_hs numeric(15)
+     - median_household_income numeric(15)
+     - mean_household_income numeric(15)
+     - homeowner_vacancy_rate numeric(6,2)
+     - owner_median_price numeric(15)
+     - household_w_mortgage_num numeric(15)
+     - household_wo_mortgage_num numeric(15)
+     - renter_median_price numeric(15)
+     - renters_num numeric(15)
 
-- **E**xtract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
-- **T**ransform: what data cleaning or transformation was required.
-- **L**oad: the final database, tables/collections, and why this was chosen.
+**schools table**
+
+  - Primary:
+   - id serial
+  - Non-numerical:
+    - district_name text 
+    - city varchar(30) 
+    - county_name varchar(20) 
+
+**income_tax**
+
+  - Primary:
+    - county_name varchar(20)
+  - Numerical:
+   - num_of_returns numeric(15)
+   - fed_agi numeric(15)
+   - oh_income_tax_liability numeric(15)
+
+**property_tax**
+
+  - Primary:
+    - county_name varchar(20)
+  - Numerical:
+    - class_1_taxable_value numeric(15)
+    - class_2_taxable_value numeric(15)
+    - total_taxable_value numeric(15)
+    - class_1_effective_rate numeric(6,2)
+    - class_2_effective_rate numeric(6,2)
+    - taxes_charged numeric(15)
+    - non_business_credit numeric(15)
+    - owner_occupied_credit numeric(15)
+    - exemption_reduction numeric(15)
+    - net_taxes_charged numeric(15)
+    - net_effective_tax_rate numeric(6,2)
 
 ## Limitations of the project
 
