@@ -35,8 +35,6 @@ CREATE TABLE "schools" (
      )
 );
 
-DROP TABLE IF EXISTS income_tax;
-
 CREATE TABLE "income_tax" (
     "county_name" varchar(20)   NOT NULL,
     "num_of_returns" numeric(15) ,
