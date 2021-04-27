@@ -30,9 +30,9 @@ Perform ETL on the data and document the following:
   ```
   * [Ohio School districts with city and county name](https://www.greatschools.org/schools/districts/Ohio/OH/)
   * [Ohio Tax Annual Report 2020](https://tax.ohio.gov/static/communications/publications/annual_reports/2020annualreport.pdf)
-- The type of transformation needed for this data :cleaning, joining, filtering, aggregating, etc.
+- The type of transformation needed for this data :cleaning, joining, filtering, concatenating, reset index, change datatype, etc.
 - The final production database to load the data into is relational PostgreSQL.
-- The final tables that are used in the production database.
+- The final tables that are used in the housing_db database:
   - schools, census, income_tax, property_tax   
 
 ## Structure (progresql tables under housing_db)
@@ -91,7 +91,7 @@ Perform ETL on the data and document the following:
     - net_taxes_charged numeric(15)
     - net_effective_tax_rate numeric(6,2)
 
-## Limitations of the project
+## Limitations of the dataset
 
 Data are published in 2020 or 2019.
 
