@@ -7,7 +7,8 @@ Education and housing are closely related in our socio economic life. In this pr
 ## Data Cleanup & Analysis
 
 Perform ETL on the data and document the following:
-![Data_Flow_diagram](Data_Flow_Diagram.png)
+![Data_Flow_diagram](image/Data_Flow_Diagram.png)
+
 - The sources of data that we extracted from.
   * [American Community Survey 5-Year Data (2009-2019)](https://www.census.gov/data/developers/data-sets/acs-5year.html)
   ```python
